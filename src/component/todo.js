@@ -18,7 +18,7 @@ function Todo({ todo, toggleComplete, removeTodo }) {
           textDecoration: todo.completed ? "line-through" : null
         }}
       >
-        {todo.task}
+        <p>Task:{todo.task}<br></br>Date:{todo.date}</p>
       </li>
       <button onClick={RemoveClick}>X</button>
     </div>

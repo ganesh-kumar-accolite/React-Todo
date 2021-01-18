@@ -5,6 +5,7 @@ import Todo from "./todo";
 class TodoList extends Component {
     render(){
     const { todos, removeTodo, toggleComplete }=this.props;
+    todos.sort((a, b) => a.date > b.date);
      return (
         <ul >
         {todos.map(todo => (
